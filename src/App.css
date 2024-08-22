@@ -1,38 +1,113 @@
+/* App.css */
+
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #4c7aaf;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 800px;
+  margin: auto;
+}
+
+.products {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  margin: 10px;
+  width: 120px;
+}
+
+.product-item button {
+  background-color: #4c7aaf;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.product-item button:hover {
+  background-color: #4c7aaf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart {
+  width: 100%;
+}
+
+.cart-labels {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quantity-controls span {
+  margin: 0 10px;
+}
+
+.quantity-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #e60000;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
